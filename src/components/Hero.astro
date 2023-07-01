@@ -1,0 +1,44 @@
+---
+import HeroSvg from './HeroSvg.astro';
+---
+
+<main class='hero'>
+    <div class='hero__text'>
+        <h2 class='text__main'>
+            Potencia tu éxito en línea con Media Lab Solutions
+        </h2>
+        <p class="text__subtitle">Impulsamos tu presencia digital para alcanzar nuevos horizontes</p>
+        <button class='button--primary'>Contacto</button>
+    </div>
+    <div class='hero__svg'>
+        <HeroSvg />
+    </div>
+</main>
+
+<style lang='scss'>
+    .hero {
+        height: 100vh;
+        background-color: #f9f9f9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .hero__text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            flex: 1;
+            .text__main {
+                font-size: 3rem;
+                width: 80%;
+            }
+            .text__subtitle {
+                width: 80%;
+            }
+        }
+        .hero__svg {
+            flex: 1;
+        }
+    }
+</style>

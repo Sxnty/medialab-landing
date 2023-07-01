@@ -1,15 +1,40 @@
 ---
-
 ---
 
-<header class="header">
+<header class='header'>
     <h1>MediaLab</h1>
-    <nav class="header__nav">
-        <ul class="nav__menu">
-            <li class="menu__item">Beneficios</li>
-            <li class="menu__item">Planes</li>
-            <li class="menu__item">Contacto</li>
+    <nav class='header__nav'>
+        <ul class='nav__menu'>
+            <li class='menu__item'>Beneficios</li>
+            <li class='menu__item'>Planes</li>
+            <li class='menu__item'>Contacto</li>
         </ul>
+        <button>Login</button>
     </nav>
-    <button>Login</button>
 </header>
+
+<style lang='scss'>
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        color: #001F3F;
+        h1 {
+            font-family: 'Lato', sans-serif;
+        }
+        .header__nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+            .nav__menu {
+                display: flex;
+                gap: 2rem;
+            }
+        }
+    }
+</style>
